@@ -110,7 +110,7 @@ body {
   font-size: var(--fs-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../img/ffffff.gif");
+  background-image: url("ffffff.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -118,7 +118,7 @@ body {
 }
 
 .dark-mode {
-  background-image: url("../img/ffffff.gif");
+  background-image: url("ffffff.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
