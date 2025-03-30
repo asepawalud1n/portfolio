@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Asep Awaludin - Programmer & Developer Portfolio. Explore my skills, projects, and experience.">
+  <meta name="keywords" content="developer, programmer, portfolio, web development, Asep Awaludin">
+  <meta name="author" content="Asep Awaludin">
+  <title>Asep Awaludin | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.pinimg.com/236x/1d/49/bf/1d49bf78b3e8d0af039671ac02f7bd74.jpg" type="image/x-icon">  
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="document/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Asep Awaludin | Portfolio">
+  <meta property="og:description" content="Programmer & Developer Portfolio">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:url" content="https://asepawaludin.com">
+  <meta property="og:type" content="website">
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" aria-label="Asep Awaludin">Asep <span>Awaludin</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarNav">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" aria-current="page" data-i18n="nav_home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-i18n="nav_about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience" data-i18n="nav_experience">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" data-i18n="nav_skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-i18n="nav_contact">CONTACT</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <button id="theme-toggle" class="btn btn-sm glass-effect" aria-label="Toggle theme" title="Switch between dark and light mode">
+              <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Language Switcher -->
+  <div class="language-switcher-container position-fixed">
+    <div class="dropdown language-switcher">
+      <button class="btn btn-sm dropdown-toggle" type="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-2"></i><span class="current-language">EN</span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="languageSwitcher">
+        <li><a class="dropdown-item" href="#" data-lang="en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="English Flag" class="me-2" width="20" height="20">English</a></li>
+        <li><a class="dropdown-item" href="#" data-lang="id"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/2560px-Flag_of_Indonesia.svg.png" alt="Indonesian Flag" class="me-2" width="20" height="20">Indonesia</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 home-content text-left animate__animated animate__fadeInUp">
+          <h4 data-i18n="home_hello">Hello, I'm</h4>
+          <h1 class="stylized-name gradient-text">Asep <span>Awaludin</span></h1>
+          <h3><span data-i18n="home_profession">I'm a</span> <span id="typed-output" class="primary-color"></span></h3>
+          <div class="mt-4">
+            <a href="#contact" class="btn btn-primary">
+              <span data-i18n="home_contact">Contact Me</span>
+              <i class="fas fa-envelope-open-text ms-2" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="social-icons mt-4">
+            <a href="https://github.com/asepawaludin1" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://id.linkedin.com/in/asep-awaludin-7b3abb358" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/asepawalud1n/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/asepawldnn" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Removed scroll down element as requested -->
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <!-- Update the section titles to use the new horizontal lines structure -->
+      <!-- About Me Section -->
+      <div class="section-title text-center">
+        <h2 class="stylized-heading"><span data-i18n="about_title">About Me</span></h2>
+        <div class="title-lines">
+          <div class="title-line blue"></div>
+          <div class="title-line green"></div>
+          <div class="title-line blue"></div>
+        </div>
+        <p class="section-description mt-4 mb-5" data-i18n="about_subtitle">Get to know more about me, my background, and what I do</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0 animate__animated animate__fadeInLeft">
+          <div class="about-img">
+            <img src="img/Killua.jpeg" alt="Asep Awaludin" class="img-fluid profile-img" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-7 animate__animated animate__fadeInRight">
+          <div class="about-content">
+            <h3 class="stylized-subheading" data-i18n="about_profession">Programmer & Developer</h3>
+            <p class="lead" data-i18n="about_p1">
+              I am a 4th-semester student in Informatics Engineering at Universitas Pamulang with an interest in software development and programming.
+            </p>
+            
+            <p data-i18n="about_p2">
+              Driven by a passion for innovation, I strive to improve my abilities and tackle challenges in the IT industry. Always eager to learn, I am committed to making meaningful contributions in the tech world.
+            </p>
+            
+            <p data-i18n="about_p3">
+              My journey in software development started with learning the fundamentals of programming languages such as Java, C, and JavaScript. I've since expanded my knowledge to include web development technologies and frameworks, allowing me to create responsive and dynamic web applications.
+            </p>
+            
+            <div class="about-details mt-4">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="about-detail">
+                    <i class="fas fa-user-graduate me-2" aria-hidden="true"></i>
+                    <span><strong data-i18n="about_education">Education:</strong> Universitas Pamulang</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="about-detail">
+                    <i class="fas fa-code me-2" aria-hidden="true"></i>
+                    <span><strong data-i18n="about_field">Field:</strong> Informatics Engineering</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="about-detail">
+                    <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                    <span><strong data-i18n="about_location">Location:</strong> Karawang, Indonesia</span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="about-detail">
+                    <i class="fas fa-language me-2" aria-hidden="true"></i>
+                    <span><strong data-i18n="about_languages">Languages:</strong> Indonesian, English</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <!-- Update the section titles to use the new horizontal lines structure -->
+      <!-- Experience Section -->
+      <div class="section-title text-center">
+        <h2 class="stylized-heading"><span data-i18n="experience_title">My Experience</span></h2>
+        <div class="title-lines">
+          <div class="title-line blue"></div>
+          <div class="title-line green"></div>
+          <div class="title-line blue"></div>
+        </div>
+        <p class="section-description mt-4 mb-5" data-i18n="experience_subtitle">Journey through my professional experience and achievements</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="timeline-container">
+            <!-- Removed self-employed and tech solutions sections as requested -->
+            <!-- Update the experience timeline to match the provided image -->
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="timeline-date">2022 - Present</div>
+                <div class="timeline-position" data-i18n="experience_position">STORE CREW</div>
+              </div>
+              <div class="timeline-center">
+                <div class="timeline-line"></div>
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-right">
+                <div class="timeline-company" data-i18n="experience_company">ALFAMART</div>
+                <div class="timeline-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span data-i18n="experience_location">Karawang, Indonesia</span>
+                </div>
+                <div class="timeline-description" data-i18n="experience_description">
+                  Worked as a store crew at Alfamart, handling customer service, stock management, store upkeep, and ensuring smooth operations.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <!-- Update the section titles to use the new horizontal lines structure -->
+      <!-- Skills Section -->
+      <div class="section-title text-center">
+        <h2 class="stylized-heading"><span data-i18n="skills_title">My Skills</span></h2>
+        <div class="title-lines">
+          <div class="title-line blue"></div>
+          <div class="title-line green"></div>
+          <div class="title-line blue"></div>
+        </div>
+        <p class="section-description mt-4 mb-5" data-i18n="skills_subtitle">A comprehensive overview of my technical and professional abilities</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="skills-wrapper">
+            <!-- Technical Skills -->
+            <div class="skills-category mb-5">
+              <h3 class="skills-category-title stylized-subheading" data-i18n="skills_technical">Technical Skills</h3>
+              <div class="row g-4">
+                <div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp">
+                  <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                      <div class="skill-icon html">
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>HTML</h4>
+                      <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                          <div class="skill-progress" data-percentage="95"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+                  <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                      <div class="skill-icon css">
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>CSS</h4>
+                      <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                          <div class="skill-progress" data-percentage="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                  <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                      <div class="skill-icon js">
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>JavaScript</h4>
+                      <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                          <div class="skill-progress" data-percentage="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+                  <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                      <div class="skill-icon java">
+                        <i class="fa-brands fa-java" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>Java</h4>
+                      <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                          <div class="skill-progress" data-percentage="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                  <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                      <div class="skill-icon c">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" width="35" height="35">
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>C</h4>
+                      <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                          <div class="skill-progress" data-percentage="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animate__animated animate__fadeInUp" style="animation-delay: 0.5s">
+                  <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                      <div class="skill-icon api">
+                        <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>API</h4>
+                      <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                          <div class="skill-progress" data-percentage="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Professional Skills -->
+            <div class="skills-category">
+              <h3 class="skills-category-title stylized-subheading" data-i18n="skills_professional">Professional Skills</h3>
+              <div class="row g-4">
+                <div class="col-md-6 animate__animated animate__fadeInUp">
+                  <div class="professional-skill">
+                    <div class="professional-skill-info">
+                      <h4 data-i18n="skills_teamwork">Team Work</h4>
+                      <span class="professional-skill-percentage">85%</span>
+                    </div>
+                    <div class="professional-skill-bar">
+                      <div class="professional-skill-progress" data-percentage="85"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+                  <div class="professional-skill">
+                    <div class="professional-skill-info">
+                      <h4 data-i18n="skills_communication">Communication</h4>
+                      <span class="professional-skill-percentage">80%</span>
+                    </div>
+                    <div class="professional-skill-bar">
+                      <div class="professional-skill-progress" data-percentage="80"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                  <div class="professional-skill">
+                    <div class="professional-skill-info">
+                      <h4 data-i18n="skills_creativity">Creativity</h4>
+                      <span class="professional-skill-percentage">95%</span>
+                    </div>
+                    <div class="professional-skill-bar">
+                      <div class="professional-skill-progress" data-percentage="95"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+                  <div class="professional-skill">
+                    <div class="professional-skill-info">
+                      <h4 data-i18n="skills_problem">Problem Solving</h4>
+                      <span class="professional-skill-percentage">75%</span>
+                    </div>
+                    <div class="professional-skill-bar">
+                      <div class="professional-skill-progress" data-percentage="75"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <!-- Update the section titles to use the new horizontal lines structure -->
+      <!-- Contact Section -->
+      <div class="section-title text-center">
+        <h2 class="stylized-heading"><span data-i18n="contact_title">Contact Me</span></h2>
+        <div class="title-lines">
+          <div class="title-line blue"></div>
+          <div class="title-line green"></div>
+          <div class="title-line blue"></div>
+        </div>
+        <p class="section-description mt-4 mb-5" data-i18n="contact_subtitle">Get in touch with me for collaborations or opportunities</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-md-5 mb-4 mb-md-0 animate__animated animate__fadeInLeft">
+              <div class="contact-info">
+                <h3 class="stylized-subheading" data-i18n="contact_heading">Let's get in touch</h3>
+                <p data-i18n="contact_p">Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  </div>
+                  <div class="text">
+                    <h5 data-i18n="contact_location">Location</h5>
+                    <p>Karawang, Indonesia</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div class="text">
+                    <h5 data-i18n="contact_email">Email</h5>
+                    <p>asepawaludiin1@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                  </div>
+                  <div class="text">
+                    <h5 data-i18n="contact_phone">Phone</h5>
+                    <p>+62 838 7090 4413</p>
+                  </div>
+                </div>
+                
+                <div class="social-links mt-4">
+                  <a href="https://x.com/asepawldnn" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.instagram.com/asepawalud1n/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://github.com/asepawaludin1" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://id.linkedin.com/in/asep-awaludin-7b3abb358" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 animate__animated animate__fadeInRight">
+              <div class="contact-form-wrapper">
+                <form id="contact-form">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Full Name" required aria-label="Full Name" data-i18n-placeholder="contact_name">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required aria-label="Email" data-i18n-placeholder="contact_email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required aria-label="Subject" data-i18n-placeholder="contact_subject">
+                      <i class="fas fa-heading" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required aria-label="Message" data-i18n-placeholder="contact_message"></textarea>
+                      <i class="fas fa-comment-alt" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                      <span data-i18n="contact_send">Send Message</span>
+                      <i class="fas fa-paper-plane ms-2" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="form-submit-feedback mt-3" style="display: none;"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p data-i18n="footer_copyright">Copyright© 2025 ASEP AWALUDIN. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Back to Top Button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+  
+  <!-- Floating Contact Button (Mobile Only) -->
+  <div class="floating-contact-btn">
+    <a href="#contact" aria-label="Contact me">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <!-- Scripts -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Update the script loading for Typed.js to ensure it's available -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="document/script.js"></script>
+</body>
+</html>
+
